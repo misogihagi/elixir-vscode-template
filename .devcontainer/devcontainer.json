@@ -1,0 +1,17 @@
+{
+  "name": "Elixir Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+      "settings": { },
+      "extensions": [
+        "jakebecker.elixir-ls",
+        "pantajoe.vscode-elixir-credo",
+        "florinpatrascu.vscode-elixir-snippets",
+        "esbenp.prettier-vscode"
+      ]
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "mix deps.get"
+}
